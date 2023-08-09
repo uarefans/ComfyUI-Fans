@@ -200,7 +200,7 @@ class FansStyler:
         else:
             for row in self.styles6:
                 if row[0] == style6:
-                    result6 += row[6] + ", "
+                    result6 += row[1] + ", "
         #7
         if style7 == "None":
             result7 = ""
