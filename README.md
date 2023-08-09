@@ -15,7 +15,7 @@ Contain 2 Nodes
   3. Output Format: The output is in string format, making it versatile for various use cases.
   4. Integration with SDXL Prompt Styler: You can combine this with the SDXL Prompt Styler, using style 1.
   5. No Need to Restart: After editing the CSV files, there's no need to restart ComfyUI. Simply refresh it or your browser to see the changes.
-  6. Sample Screenshot: The sample screenshot "Showtext|pysssss" uses the following plugins: ComfyUI-Custom-Scripts
+  6. Sample Screenshot: The sample screenshot "Showtext|pysssss" uses the following plugins: [ComfyUI-Custom-Scripts](https://github.com/pythongosssss/ComfyUI-Custom-Scripts)
 
 ## Video
   https://github.com/uarefans/ComfyUI-Fans/assets/76769414/dd2b3938-3e95-48d7-bf0e-b0ea86a65cef
