@@ -12,10 +12,11 @@ class FansTextConcatenate:
     def INPUT_TYPES(cls):
         return {
             "required": {
-                "text_a": (TEXT_TYPE, {"forceInput": (True if TEXT_TYPE == 'STRING' else False)}),
-                "linebreak_addition": (['false','true'], ),
+                "linebreak_addition": (['false','true'], {"default":"false"} ),
             },
             "optional": {
+                "prompt": (TEXT_TYPE, {"forceInput": (True if TEXT_TYPE == 'STRING' else False)}),
+                "text_a": (TEXT_TYPE, {"forceInput": (True if TEXT_TYPE == 'STRING' else False)}),
                 "text_b": (TEXT_TYPE, {"forceInput": (True if TEXT_TYPE == 'STRING' else False)}),
                 "text_c": (TEXT_TYPE, {"forceInput": (True if TEXT_TYPE == 'STRING' else False)}),
                 "text_d": (TEXT_TYPE, {"forceInput": (True if TEXT_TYPE == 'STRING' else False)}),
@@ -32,8 +33,13 @@ class FansTextConcatenate:
     FUNCTION = "text_concatenate"
     CATEGORY = "utils"
 
-    def text_concatenate(self, text_a, text_b=None, text_c=None, text_d=None, text_e=None, text_f=None, text_g=None, text_h=None, text_i=None, text_j=None, linebreak_addition='false'):
-        return_text = text_a + ("\n" if linebreak_addition == 'true' else '')
+    def text_concatenate(self, prompt=None, text_a=None, text_b=None, text_c=None, text_d=None, text_e=None, text_f=None, text_g=None, text_h=None, text_i=None, text_j=None, linebreak_addition='false'):
+        return_text = ''
+        
+        if prompt:
+            return_text = prompt + ("\n" if linebreak_addition == 'true' else '')
+        if text_a:
+            return_text = return_text + ("\n" if linebreak_addition == 'true' else '') + text_a
         if text_b:
             return_text = return_text + ("\n" if linebreak_addition == 'true' else '') + text_b
         if text_c:

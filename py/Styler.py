@@ -128,6 +128,7 @@ class FansStyler:
 
         return {
             "required": {
+                "with_comma_condition": (["Yes", "No"],{"default":"Yes"}),               
                 "style1": (style_names1, {"default": style_names1[0]}),
                 "style2": (style_names2, {"default": style_names2[0]}),
                 "style3": (style_names3, {"default": style_names3[0]}),
@@ -147,7 +148,7 @@ class FansStyler:
     OUTPUT_NODE = False
     CATEGORY = "utils"
 
-    def func(self, style1, style2, style3, style4, style5, style6, style7, style8, style9, style10):
+    def func(self, with_comma_condition, style1, style2, style3, style4, style5, style6, style7, style8, style9, style10):
         result1 = ""
         result2 = ""
         result3 = ""
@@ -165,70 +166,100 @@ class FansStyler:
         else:
             for row in self.styles1:
                 if row[0] == style1:
-                    result1 += row[1] + ", "
+                    if with_comma_condition == 'Yes':
+                        result1 += row[1] + ", "
+                    else:
+                        result1 += row[1] + " "
         #2
         if style2 == "None":
             result2 = ""
         else:
             for row in self.styles2:
                 if row[0] == style2:
-                    result2 += row[1] + ", "
+                    if with_comma_condition == 'Yes':
+                        result2 += row[1] + ", "
+                    else:
+                        result2 += row[1] + " "
         #3
         if style3 == "None":
             result3 = ""
         else:
             for row in self.styles3:
                 if row[0] == style3:
-                    result3 += row[1] + ", "
+                    if with_comma_condition == 'Yes':
+                        result3 += row[1] + ", "
+                    else:
+                        result3 += row[1] + " "
         #4
         if style4 == "None":
             result4 = ""
         else:
             for row in self.styles4:
                 if row[0] == style4:
-                    result4 += row[1] + ", "
+                    if with_comma_condition == 'Yes':
+                        result4 += row[1] + ", "
+                    else:
+                        result4 += row[1] + " "
         #5
         if style5 == "None":
             result5 = ""
         else:
             for row in self.styles5:
                 if row[0] == style5:
-                    result5 += row[1] + ", "
+                    if with_comma_condition == 'Yes':
+                        result5 += row[1] + ", "
+                    else:
+                        result5 += row[1] + " "
         #6
         if style6 == "None":
             result6 = ""
         else:
             for row in self.styles6:
                 if row[0] == style6:
-                    result6 += row[1] + ", "
+                    if with_comma_condition == 'Yes':
+                        result6 += row[1] + ", "
+                    else:
+                        result6 += row[1] + " "
         #7
         if style7 == "None":
             result7 = ""
         else:
             for row in self.styles7:
                 if row[0] == style7:
-                    result7 += row[1] + ", "
+                    if with_comma_condition == 'Yes':
+                        result7 += row[1] + ", "
+                    else:
+                        result7 += row[1] + " "
         #8
         if style8 == "None":
             result8 = ""
         else:
             for row in self.styles8:
                 if row[0] == style8:
-                    result8 += row[1] + ", "
+                    if with_comma_condition == 'Yes':
+                        result8 += row[1] + ", "
+                    else:
+                        result8 += row[1] + " "
         #9
         if style9 == "None":
             result9 = ""
         else:
             for row in self.styles9:
                 if row[0] == style9:
-                    result9 += row[1] + ", "
+                    if with_comma_condition == 'Yes':
+                        result9 += row[1] + ", "
+                    else:
+                        result9 += row[1] + " "
         #10
         if style10 == "None":
             result10 = ""
         else:
             for row in self.styles10:
                 if row[0] == style10:
-                    result10 += row[1] + ", "
+                    if with_comma_condition == 'Yes':
+                        result10 += row[1] + ", "
+                    else:
+                        result10 += row[1] + " "
 
         return result1, result2, result3, result4, result5, result6, result7, result8, result9, result10
 
