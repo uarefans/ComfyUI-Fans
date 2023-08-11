@@ -4,6 +4,8 @@
 Contain 2 Nodes
   1. Fans Styler (Max 10 Style)
   2. Fans Text Concat (Until 10 text)
+  3. Fans Prompt Styler Postive (Can replace {prompt} word in your csv files)
+  4. Fans Prompt Styler Negative (With sentence structure)
 
 ## Installation
   1. Clone the repository to your ComfyUI `custom_nodes` directory: `git clone https://github.com/uarefans/ComfyUI-Fans`
