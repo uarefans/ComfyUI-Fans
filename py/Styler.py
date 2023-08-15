@@ -35,7 +35,7 @@ class FansStyler:
     def INPUT_TYPES(cls):        
         #1
         if not os.path.exists(csv_file_path1):
-            cls.styles1 = [["No Styles1.csv", "styles1", "styles11"]]
+            cls.styles1 = [["No Styles1.csv", "styles1", "styles1"]]
         else:
             with open(csv_file_path1, "r") as f:
                 reader = csv.reader(f)
@@ -129,16 +129,16 @@ class FansStyler:
         return {
             "required": {
                 "with_comma_condition": (["Yes", "No"],{"default":"Yes"}),               
-                "style1": (style_names1, {"default": style_names1[0]}),
-                "style2": (style_names2, {"default": style_names2[0]}),
-                "style3": (style_names3, {"default": style_names3[0]}),
-                "style4": (style_names4, {"default": style_names4[0]}),
-                "style5": (style_names5, {"default": style_names5[0]}),
-                "style6": (style_names6, {"default": style_names6[0]}),
-                "style7": (style_names7, {"default": style_names7[0]}),
-                "style8": (style_names8, {"default": style_names8[0]}),
-                "style9": (style_names9, {"default": style_names9[0]}),
-                "style10": (style_names10, {"default": style_names10[0]}),
+                "style1": (style_names1, {"default": style_names1[1]}),
+                "style2": (style_names2, {"default": style_names2[1]}),
+                "style3": (style_names3, {"default": style_names3[1]}),
+                "style4": (style_names4, {"default": style_names4[1]}),
+                "style5": (style_names5, {"default": style_names5[1]}),
+                "style6": (style_names6, {"default": style_names6[1]}),
+                "style7": (style_names7, {"default": style_names7[1]}),
+                "style8": (style_names8, {"default": style_names8[1]}),
+                "style9": (style_names9, {"default": style_names9[1]}),
+                "style10": (style_names10, {"default": style_names10[1]}),
             },
         }
 
