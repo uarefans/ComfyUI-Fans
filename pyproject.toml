@@ -1,0 +1,14 @@
+[project]
+name = "comfyui-fans"
+description = "Nodes: Fans Styler (Max 10 Style), Fans Text Concat (Until 10 text)."
+version = "1.0.0"
+license = "LICENSE"
+
+[project.urls]
+Repository = "https://github.com/uarefans/ComfyUI-Fans"
+#  Used by Comfy Registry https://comfyregistry.org
+
+[tool.comfy]
+PublisherId = ""
+DisplayName = "ComfyUI-Fans"
+Icon = ""
