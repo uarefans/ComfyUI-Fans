@@ -37,70 +37,70 @@ class FansStyler:
         if not os.path.exists(csv_file_path1):
             cls.styles1 = [["No Styles1.csv", "styles1", "styles1"]]
         else:
-            with open(csv_file_path1, "r") as f:
+            with open(csv_file_path1, "r", encoding="utf-8") as f:
                 reader = csv.reader(f)
                 cls.styles1 = [row for row in reader if len(row) == 2 and row[1] != "prompt" and row[0] != "None"]
         #2                
         if not os.path.exists(csv_file_path2):
             cls.styles2 = [["No Styles2.csv", "styles2", "styles2"]]
         else:
-            with open(csv_file_path2, "r") as f:
+            with open(csv_file_path2, "r", encoding="utf-8") as f:
                 reader = csv.reader(f)
                 cls.styles2 = [row for row in reader if len(row) == 2 and row[1] != "prompt" and row[0] != "None"]
         #3                
         if not os.path.exists(csv_file_path3):
             cls.styles3 = [["No Styles3.csv", "styles3", "styles3"]]
         else:
-            with open(csv_file_path3, "r") as f:
+            with open(csv_file_path3, "r", encoding="utf-8") as f:
                 reader = csv.reader(f)
                 cls.styles3 = [row for row in reader if len(row) == 2 and row[1] != "prompt" and row[0] != "None"]
         #4                
         if not os.path.exists(csv_file_path4):
             cls.styles4 = [["No Styles4.csv", "styles4", "styles4"]]
         else:
-            with open(csv_file_path4, "r") as f:
+            with open(csv_file_path4, "r", encoding="utf-8") as f:
                 reader = csv.reader(f)
                 cls.styles4 = [row for row in reader if len(row) == 2 and row[1] != "prompt" and row[0] != "None"]
         #5                
         if not os.path.exists(csv_file_path5):
             cls.styles5 = [["No Styles5.csv", "styles5", "styles5"]]
         else:
-            with open(csv_file_path5, "r") as f:
+            with open(csv_file_path5, "r", encoding="utf-8") as f:
                 reader = csv.reader(f)
                 cls.styles5 = [row for row in reader if len(row) == 2 and row[1] != "prompt" and row[0] != "None"]
         #6
         if not os.path.exists(csv_file_path6):
             cls.styles6 = [["No Styles6.csv", "styles6", "styles6"]]
         else:
-            with open(csv_file_path6, "r") as f:
+            with open(csv_file_path6, "r", encoding="utf-8") as f:
                 reader = csv.reader(f)
                 cls.styles6 = [row for row in reader if len(row) == 2 and row[1] != "prompt" and row[0] != "None"]
         #7
         if not os.path.exists(csv_file_path7):
             cls.styles7 = [["No Styles7.csv", "styles7", "styles7"]]
         else:
-            with open(csv_file_path7, "r") as f:
+            with open(csv_file_path7, "r", encoding="utf-8") as f:
                 reader = csv.reader(f)
                 cls.styles7 = [row for row in reader if len(row) == 2 and row[1] != "prompt" and row[0] != "None"]
         #8                
         if not os.path.exists(csv_file_path8):
             cls.styles8 = [["No Styles8.csv", "Styles8", "Styles8"]]
         else:
-            with open(csv_file_path8, "r") as f:
+            with open(csv_file_path8, "r", encoding="utf-8") as f:
                 reader = csv.reader(f)
                 cls.styles8 = [row for row in reader if len(row) == 2 and row[1] != "prompt" and row[0] != "None"]
         #9
         if not os.path.exists(csv_file_path9):
             cls.styles9 = [["No Styles9.csv", "styles9", "styles9"]]
         else:
-            with open(csv_file_path9, "r") as f:
+            with open(csv_file_path9, "r", encoding="utf-8") as f:
                 reader = csv.reader(f)
                 cls.styles9 = [row for row in reader if len(row) == 2 and row[1] != "prompt" and row[0] != "None"]
         #10
         if not os.path.exists(csv_file_path10):
             cls.styles10 = [["No Styles10.csv", "styles10", "styles10"]]
         else:
-            with open(csv_file_path10, "r") as f:
+            with open(csv_file_path10, "r", encoding="utf-8") as f:
                 reader = csv.reader(f)
                 cls.styles10 = [row for row in reader if len(row) == 2 and row[1] != "prompt" and row[0] != "None"]
 
